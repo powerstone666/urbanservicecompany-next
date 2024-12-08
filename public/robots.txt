@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://urbanservicecompany.me
+
+# Sitemaps
+Sitemap: https://urbanservicecompany.me/sitemap.xml
