@@ -59,6 +59,7 @@ export default function RootLayout({
         <meta name="author" content="Urban Service Company" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-adsense-account" content="ca-pub-2914201371636948">
         <link rel="icon" href="icon2.png" />
         <style>
           {`
