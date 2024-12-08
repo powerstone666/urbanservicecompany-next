@@ -94,7 +94,7 @@ const Footer = () => {
               </p>
               <p className='flex items-center justify-center md:justify-start'>
                 <FaEnvelope className='mr-2' />
-                <a href="mailto:bestelectronicservices556@gmail.com">bestelectronicservices556@gmail.com</a>
+                <a href="info@urbanservicecompany.me">info@urbanservicecompany.me</a>
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Footer = () => {
         <p className='text-sm md:text-base'>Call Now</p>
       </div>
     </a>
-    <a href="mailto:bestelectronicservices556@gmail.com">
+    <a href="mailto:info@urbanservicecompany.me">
       <div className='flex items-center gap-2 border-x-2 border-white px-4 md:px-5'>
         <FaEnvelope />
         <p className='text-sm md:text-base'>Mail Us</p>
