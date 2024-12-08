@@ -12,7 +12,7 @@ const Footer = () => {
         <meta name="description" content="Urban Service Company offers top microwave repair services in Bangalore and other appliances like AC, washing machine, refrigerator in various locations including Marathahalli, Whitefield, Electronic City, and more." />
         <meta name="keywords" content="microwave repair, AC repair, washing machine repair, refrigerator repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
       </Head>
-      <footer className='h-full w-full bg-black text-white p-8 md:p-20 mb-24 md:mb-12'>
+      <footer className='h-full w-full bg-black text-white p-8 md:p-20 mb-18 md:mb-12'>
         <div className='flex items-center justify-center'>
           <div className='grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-screen-lg text-center md:text-left'>
             {/* Company Info Section */}
