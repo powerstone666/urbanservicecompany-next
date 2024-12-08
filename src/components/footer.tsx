@@ -103,22 +103,29 @@ const Footer = () => {
           <p className='border-t-2 py-8 border-white mt-8'>© {new Date().getFullYear()} Urban Service Company. All Rights Reserved.</p>
         </div>
       </footer>
-      <div className='flex justify-between w-screen h-32 fixed bottom-0 items-center z-40 bg-black text-white px-8 md:justify-center'>
-        <div className='flex flex-row gap-2 md:gap-12'>
-          <a href="tel:+919019349170"> <div className='flex items-center gap-2'>
-            <FaPhone />
-            <p> Call Now</p>
-          </div></a>
-          <a href="mailto:bestelectronicservices556@gmail.com"> <div className='flex items-center gap-2 border-x-2 border-white px-5'>
-            <FaEnvelope />
-            <p> Mail Us</p>
-          </div></a>
-          <a href="https://wa.me/+919019349170" target="_blank" rel="noopener noreferrer">  <div className='flex items-center gap-2'>
-            <FaWhatsapp />
-            <p> WhatsApp</p>
-          </div></a>
-        </div>
+      <div className='flex justify-between w-screen h-16 fixed bottom-0 items-center z-40 bg-black text-white px-4 md:h-32 md:px-8'>
+  <div className='flex flex-row gap-4 md:gap-12 justify-around w-full md:justify-center'>
+    <a href="tel:+919019349170">
+      <div className='flex items-center gap-2'>
+        <FaPhone />
+        <p className='text-sm md:text-base'>Call Now</p>
       </div>
+    </a>
+    <a href="mailto:bestelectronicservices556@gmail.com">
+      <div className='flex items-center gap-2 border-x-2 border-white px-4 md:px-5'>
+        <FaEnvelope />
+        <p className='text-sm md:text-base'>Mail Us</p>
+      </div>
+    </a>
+    <a href="https://wa.me/+919019349170" target="_blank" rel="noopener noreferrer">
+      <div className='flex items-center gap-2'>
+        <FaWhatsapp />
+        <p className='text-sm md:text-base'>WhatsApp</p>
+      </div>
+    </a>
+  </div>
+</div>
+
     </div>
   );
 };
