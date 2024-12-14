@@ -1,12 +1,10 @@
 import Head from 'next/head';
-
 import { LuCalendarSearch } from "react-icons/lu";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { TbHealthRecognition } from "react-icons/tb";
-import CustomTypeWriter from '../typewriter';
 import Slider from '../slider';
 interface Home2Props {
-    name: string; 
+    name: string | string[] | undefined; 
   }
 
 function Home2({name}:Home2Props) {
@@ -20,10 +18,10 @@ function Home2({name}:Home2Props) {
           {/* Header Section */}
           <div className="h-24 md:h-52 w-full bg-black flex flex-col justify-center items-center">
             <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold">
-              Top Microwave Oven Repair Services In {name}
+              Top Microwave Oven Repair Services In
             </h1>
             <h1 className="text-white text-xl text-center md:text-3xl lg:text-5xl font-bold md:mt-4 mt-2">
-             <CustomTypeWriter/>
+            {name}
             </h1>
           </div>
   
