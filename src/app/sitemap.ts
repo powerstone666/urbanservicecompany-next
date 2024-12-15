@@ -12,7 +12,7 @@ const slugs = [
   'Majestic', 'Malleshwaram', 'Marathahalli', 'Mathikere', 'Nagarbhavi', 'Nagavara', 'Peenya', 'RT Nagar',
   'Rajajinagar', 'Rajarajeshwari Nagar', 'Rammurthy nagar', 'Sahakar Nagar', 'Sanjaynagar', 'Sarjapur',
   'Sarjapur Road', 'Shanti nagar', 'Shivaji nagar', 'Thanisandra', 'Ulsoor', 'Vasanth nagar', 'Vidyaranyapura',
-  'Vijayanagar', 'Whitefield', 'Yelahanka', 'Yelahanka new town', 'Yeshwanthpur',
+  'Vijayanagar', 'Whitefield', 'Yelahanka', 'Yelahanka new town', 'Yeshwanthpur','location'
 ];
 
 const baseUrl = 'https://urbanservicecompany.me';

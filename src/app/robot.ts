@@ -11,7 +11,7 @@ const slugs = [
   'Kodgehalli', 'Koramangala', 'Kothnur', 'Kudlu Gate', 'Kuthahalli', 'Madiwala', 'Magadi Road', 'Majestic', 
   'Malleshwaram', 'Marathahalli', 'Mathikere', 'Nagarbhavi', 'Nagavara', 'Peenya', 'RT Nagar', 'Rajajinagar', 
   'Rajarajeshwari Nagar', 'Rammurthy nagar', 'Sahakar Nagar', 'Sanjaynagar', 'Sarjapur', 'Sarjapur Road', 
-  'Shanti nagar', 'Shivaji nagar', 'Thanisandra', 'Ulsoor', 'Vasanth nagar', 'Vidyaranyapura', 'Vijayanagar', 
+  'Shanti nagar', 'Shivaji nagar', 'Thanisandra', 'Ulsoor', 'Vasanth nagar', 'Vidyaranyapura', 'Vijayanagar', 'location',
   'Whitefield', 'Yelahanka', 'Yelahanka new town', 'Yeshwanthpur'
 ];
 
