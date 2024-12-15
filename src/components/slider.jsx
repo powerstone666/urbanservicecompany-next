@@ -13,10 +13,42 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation ,Autoplay} from 'swiper/modules';
 
 export default function Slider() {
-      // Array to store image URLs
-
   return (
     <>
+      <style jsx global>{`
+        .swiper {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+        }
+        
+        .swiper-slide {
+          width: 100%;
+          height: 100%;
+          padding: 0;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: white !important;
+          background: rgba(0, 0, 0, 0.5);
+          width: 35px !important;
+          height: 35px !important;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 18px !important;
+        }
+
+        .swiper-pagination-bullet {
+          background: white !important;
+          cursor: pointer;
+        }
+      `}</style>
+
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -30,79 +62,103 @@ export default function Slider() {
         }}
         navigation={true}
         modules={[Autoplay,Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper w-full h-full"
       > 
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/b-SAIyJvEdV-RRwBiYk4szVx6WLjk5XKj34Xxf8yliM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kYW5t/YXJjYXBwbGlhbmNl/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMS9wcm8t/cmFuZ2UtY29va2lu/Zy5qcGc"
-            alt="microwave oven repair"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1664515730165-44c4fbb3f45b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="professional appliance repair service"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/r5xStjdWWUkZ72vxd2YgW4yXfPdZotKrp3GJf_E1s6k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcnMu/cmVwYWlyL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzEwL292/ZW4tc2VsZi1jbGVh/bmluZy5qcGc"
-            alt="inner view of a microwave oven"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1570222094114-d054a817e56b"
+              alt="washing machine repair service"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/nmYG04kw56yVCZJX9RNNZ3ISRD5yA9SiRfzQKFh0Qww/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ndWlk/ZS1pbWFnZXMuY2Ru/LmlmaXhpdC5jb20v/aWdpL0NSWExWVGgy/MkVGSkJlaDQubWVk/aXVt"
-            alt="touchpad of a microwave oven"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1682126009570-3fe2399162f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="refrigerator maintenance"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/OXbIYvebRLS2DCfjQ6uqfDcKxgVSbX9RIcBA3OAx-8o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ndWlk/ZS1pbWFnZXMuY2Ru/LmlmaXhpdC5jb20v/aWdpL0tENVJ4Y2cx/ZnZKWFlYSVIubWVk/aXVt"
-            alt="printed circuit board (PCB) of a microwave oven"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e"
+              alt="appliance technician at work"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/Sd_hl5_ZlKu_nIjMgrb-ClMBYV-NH7TzY3IWiVreUvA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2VhcnNob21lc2Vy/dmljZXMuY29tL2Nm/dGFzc2V0cy9ZVWFL/TFBxNTVZOEd4UlJ6/cEZ5Wm8vYzYzNWQw/ZDMxMzNlNjQwODAy/NjVlMGRlYzVjMjgz/YmEvSXNfSXRfQmV0/dGVyX3RvX1JlcGFp/cl9vcl9SZXBsYWNl/X1lvdXJfV2FzaGlu/Z19NYWNoaW5lLnBu/Zz93PTM4NDAmcT03/NQ"
-            alt="washing machine repair"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1638949493140-edb10b7be2f3?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="modern kitchen appliances"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/uUTLqhcKp7y7cIy-7hGLUBIPOi7GOTdEUlOE_XMLvzc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by95b3VuZy1yZXBh/aXJtYW4tc2Vydmlj/ZS13b3JrZXItcmVw/YWlyaW5nLWRpc2h3/YXNoZXItYXBwbGlh/bmNlLWtpdGNoZW4t/d2hpbGUtdXNlLXNw/ZWNpYWwtdG9vbHNf/MzYyMzg5LTExMjk0/LmpwZz9zZW10PWFp/c19oeWJyaWQ"
-            alt="inner view of a washing machine"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1664443944751-fe44a3ec3924?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://plus.unsplash.com/premium_photo-1664443944751-fe44a3ec3924?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="appliance diagnostic service"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/JCfnFhlO6skNubO1QpJ5aNhwoZzJ2rR8QCKKNBQ4FZ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzEyLzM2Lzg3/LzM2MF9GXzIxMjM2/ODc2MV9vSjZrRWlq/RGVxc0tsY3VVZkpo/WmdydTdTMnRKN2NC/bC5qcGc"
-            alt="refrigerator repair"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="modern home appliances"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide  className="flex items-center justify-center">
-          <Image
-            src="https://imgs.search.brave.com/Z0no26NuHmnZvH068iM8Fa3BvCjQ4CCIKjpqSlODT5I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzgwLzE3LzEw/LzM2MF9GXzI4MDE3/MTA3N19mVkcyY1JB/Tms3bG9QOVRpQ2tr/azkwVWhBb3N1NmZ6/Yy5qcGc"
-            alt="inner view of a refrigerator"
-            className=" object-cover rounded-md"
-            width={860}
-            height={0}
-          />
+        <SwiperSlide className="w-full h-full cursor-pointer">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1667520172423-fb404a06100a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="professional repair service"
+              className="object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

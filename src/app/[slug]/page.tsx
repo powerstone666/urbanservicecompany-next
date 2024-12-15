@@ -63,17 +63,17 @@ export default async function Home({ params }: { params: tParams }) {
   const place = formattedSlug;
 
   return (
-    <div>
-      <Navbar />
-      <div className="pt-20">
-        <Home2 name={place} />
-        <Services />
-        <About />
-        <Choose />
-        <Faq />
-        <Footer />
-      </div>
+    <main>
+    <Navbar/>
+    <div className="pt-14 md:pt-14"> {/* Increased padding for better spacing */}
+      <Home2 name={place} />
+      <Services/>
+      <About/>
+      <Choose/>
+      <Faq/>
+      <Footer/>
     </div>
+  </main>
   );
 }
 

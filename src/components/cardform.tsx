@@ -1,5 +1,4 @@
 import * as React from "react"
-import Head from "next/head"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -20,40 +19,63 @@ import {
 
 export function CardWithForm() {
   return (
-    <>
-      <Head>
-        <title>Top Microwave Repair Services in Bangalore | Urban Service Company</title>
-        <meta name="description" content="Top microwave repair services in Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur. We also offer repair services for AC, washing machines, and other appliances." />
-        <meta name="keywords" content="microwave repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
-      </Head>
-      <h1 className="text-white text-2xl md:text-4xl font-bold text-center pt-8 pb-4">Schedule a call with us in one click</h1>
-      <Card className="w-[350px] md:w-1/2 md:mt-8">
-        <CardHeader>
-          <CardTitle>Urban Service Company</CardTitle>
-          <CardDescription>Top microwave oven repair in Bangalore and surrounding areas</CardDescription>
+    <div className="w-full">
+      <Card>
+        <CardHeader className="space-y-2">
+          <CardTitle className="text-2xl md:text-3xl font-bold text-gray-900">
+            Urban Service Company
+          </CardTitle>
+          <CardDescription className="text-base md:text-lg text-gray-600">
+            Top microwave oven repair in Bangalore and surrounding areas
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <form target="_blank" method="post" action="https://formspree.io/f/mgegrqwy">
-            <div className="grid w-full items-center gap-4">
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" name="name" placeholder="Enter Your Name" required />
+          <form 
+            target="_blank" 
+            method="post" 
+            action="https://formspree.io/f/mgegrqwy"
+            className="space-y-6"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="name" className="text-sm font-medium">Name</Label>
+                <Input 
+                  id="name" 
+                  name="name" 
+                  placeholder="Enter Your Name" 
+                  className="w-full" 
+                  required 
+                />
               </div>
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" name="email" type="email" placeholder="Example@gmail.com" required />
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+                <Input 
+                  id="email" 
+                  name="email" 
+                  type="email" 
+                  placeholder="Example@gmail.com" 
+                  className="w-full" 
+                  required 
+                />
               </div>
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" name="phone" type="tel" placeholder="+91-xxxxxxxxxx" required />
+              <div className="space-y-2">
+                <Label htmlFor="phone" className="text-sm font-medium">Phone Number</Label>
+                <Input 
+                  id="phone" 
+                  name="phone" 
+                  type="tel" 
+                  placeholder="+91-xxxxxxxxxx" 
+                  className="w-full" 
+                  required 
+                />
               </div>
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="brand">Brand</Label>
+              <div className="space-y-2">
+                <Label htmlFor="brand" className="text-sm font-medium">Brand</Label>
                 <Select name="brand">
-                  <SelectTrigger id="brand">
-                    <SelectValue placeholder="Select" />
+                  <SelectTrigger id="brand" className="w-full cursor-pointer">
+                    <SelectValue placeholder="Select Brand" />
                   </SelectTrigger>
-                  <SelectContent position="popper">
+                  <SelectContent>
                     <SelectItem value="samsung">Samsung</SelectItem>
                     <SelectItem value="lg">LG</SelectItem>
                     <SelectItem value="bosch">Bosch</SelectItem>
@@ -66,12 +88,17 @@ export function CardWithForm() {
                 </Select>
               </div>
             </div>
-            <div className="flex justify-end mt-4">
-              <Button type="submit">Submit</Button>
+            <div className="flex justify-end pt-4">
+              <Button 
+                type="submit" 
+                className="w-full md:w-auto bg-black hover:bg-gray-900 text-white px-8 py-2 rounded-lg transition-colors duration-300 cursor-pointer"
+              >
+                Submit Request
+              </Button>
             </div>
           </form>
         </CardContent>
       </Card>
-    </>
+    </div>
   )
 }

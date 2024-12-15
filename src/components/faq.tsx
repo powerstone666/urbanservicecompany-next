@@ -1,8 +1,13 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Head from 'next/head';
 import Link from 'next/link';
+import { motion, AnimatePresence } from "framer-motion";
 
 const FAQ = () => {
+  const [expandedCategory, setExpandedCategory] = useState<number | null>(null);
+  const [expandedQuestion, setExpandedQuestion] = useState<string | null>(null);
+
   const faqs = [
     {
       category: "General Questions",
@@ -33,7 +38,7 @@ const FAQ = () => {
             <>
               We serve all areas in and around Bangalore including Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, and Sarjapur. Contact us to confirm service availability in your location.{" "}
               <Link href="/location">
-              <button className="bg-transparent border-b-4 border-black"> View all locations</button>
+              <button className="bg-transparent border-b-4 border-black cursor-pointer"> View all locations</button>
               </Link>
             </>
           ),
@@ -299,23 +304,95 @@ const FAQ = () => {
         <meta name="description" content="Get the best microwave, AC, washing machine, and other appliance repair services in Bangalore and surrounding areas. Contact us for fast and reliable service." />
         <meta name="keywords" content="microwave repair, AC repair, washing machine repair, appliance repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
       </Head>
-      <div className="max-w-4xl mx-auto p-4" id="faqs">
-        <h1 className="text-2xl md:text-4xl font-bold text-center mb-8">
-          Frequently Asked Questions
-        </h1>
-        {faqs.map((faqCategory, index) => (
-          <div key={index} className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">{faqCategory.category}</h2>
-            <div className="space-y-4">
-              {faqCategory.questions.map((faq, idx) => (
-                <div key={idx} className="p-4 bg-gray-100 rounded shadow">
-                  <h3 className="text-lg font-medium">{faq.question}</h3>
-                  <p className="text-gray-700 mt-2">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-100">
+        <div className="max-w-4xl mx-auto p-6 md:p-8" id="faqs">
+          <h1 className="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-900 font-poppins">
+            Frequently Asked Questions
+          </h1>
+          
+          <div className="space-y-6">
+            {faqs.map((faqCategory, categoryIndex) => (
+              <motion.div
+                key={categoryIndex}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: categoryIndex * 0.1 }}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <button
+                  onClick={() => setExpandedCategory(expandedCategory === categoryIndex ? null : categoryIndex)}
+                  className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                >
+                  <h2 className="text-xl font-semibold font-poppins text-gray-900">{faqCategory.category}</h2>
+                  <svg
+                    className={`w-6 h-6 transform transition-transform duration-200 ${
+                      expandedCategory === categoryIndex ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <AnimatePresence>
+                  {expandedCategory === categoryIndex && (
+                    <motion.div
+                      initial={{ height: 0 }}
+                      animate={{ height: "auto" }}
+                      exit={{ height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-4 space-y-4">
+                        {faqCategory.questions.map((faq, idx) => (
+                          <div
+                            key={idx}
+                            className="border-b border-gray-100 last:border-0"
+                          >
+                            <button
+                              onClick={() => setExpandedQuestion(expandedQuestion === `${categoryIndex}-${idx}` ? null : `${categoryIndex}-${idx}`)}
+                              className="w-full py-4 text-left font-roboto text-gray-900 hover:text-gray-600 transition-colors duration-200 cursor-pointer"
+                            >
+                              <div className="flex items-center justify-between">
+                                <h3 className="text-lg font-medium">{faq.question}</h3>
+                                <svg
+                                  className={`w-5 h-5 transform transition-transform duration-200 ${
+                                    expandedQuestion === `${categoryIndex}-${idx}` ? 'rotate-180' : ''
+                                  }`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                              </div>
+                            </button>
+                            
+                            <AnimatePresence>
+                              {expandedQuestion === `${categoryIndex}-${idx}` && (
+                                <motion.div
+                                  initial={{ height: 0, opacity: 0 }}
+                                  animate={{ height: "auto", opacity: 1 }}
+                                  exit={{ height: 0, opacity: 0 }}
+                                  transition={{ duration: 0.2 }}
+                                  className="pb-4"
+                                >
+                                  <p className="text-gray-700 font-roboto">{faq.answer}</p>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </>
   );

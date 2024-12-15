@@ -4,7 +4,7 @@ function CustomTypeWriter()
 {
     const words :string[]=
         [
-           "Bangalore",
+           "Bengaluru",
             "Marathahalli",
             "Whitefield",
             "Electronic City",

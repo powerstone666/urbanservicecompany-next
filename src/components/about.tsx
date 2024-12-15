@@ -13,21 +13,37 @@ function About() {
           name="keywords"
           content="microwave repair Bangalore, AC repair Bangalore, washing machine repair Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-      <div className="w-full h-full pb-8 bg-black pt-8 text-center md:mt-12" id="about">
-        <h1 className="text-4xl text-white  border-b-4 border-yellow-600 inline-block">About Us</h1>
-        <div className="flex  justify-center items-center">
-          <div className="md:w-3/5 ">
-            <h1 className="text-white mt-8">
-              At <span className="text-yellow-500">Urban Service Company</span>, we offer top-notch microwave oven repair services, AC repair, and washing machine repair services in Bangalore. Backed by an industry expert with over 25 years of experience, we provide reliable home appliance repairs at affordable prices.
-            </h1>
-            <h1 className="text-white mt-8">
-              We proudly serve numerous locations including Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, and many more across Bangalore. Our aim is to provide hassle-free services, making your appliances work like brand-new. Our fully trained engineers are dedicated to maximizing customer loyalty by understanding and appreciating your needs in every situation.
-            </h1>
+      <div className="w-full py-16 md:py-24 bg-gradient-to-b from-black via-gray-900 to-black text-center relative overflow-hidden" id="about">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(50,50,50,0.2),rgba(0,0,0,0.5))] pointer-events-none"></div>
+        
+        <h1 className="text-4xl md:text-5xl font-poppins font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-100 border-b-4 border-yellow-600 inline-block transform hover:scale-105 transition-transform duration-300 animate-fade-in-down mb-12 cursor-pointer">
+          About Us
+        </h1>
+
+        <div className="flex justify-center items-center px-4 md:px-0">
+          <div className="md:w-3/5 space-y-8 relative z-10">
+            <p className="text-white/90 mt-8 font-roboto leading-relaxed text-lg animate-fade-in">
+              At <span className="font-poppins font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Urban Service Company</span>, 
+              we offer top-notch microwave oven repair services, AC repair, and washing machine repair services in Bangalore. 
+              Backed by an industry expert with over 25 years of experience, we provide reliable home appliance repairs at affordable prices.
+            </p>
+            
+            <p className="text-white/90 font-roboto leading-relaxed text-lg animate-fade-in delay-150">
+              We proudly serve numerous locations including Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, 
+              Indiranagar, and many more across Bangalore. Our aim is to provide hassle-free services, making your appliances 
+              work like brand-new. Our fully trained engineers are dedicated to maximizing customer loyalty by understanding 
+              and appreciating your needs in every situation.
+            </p>
           </div>
         </div>
       </div>
     </>
   );
 }
+
 export default About;
