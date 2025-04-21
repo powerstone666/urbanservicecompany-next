@@ -10,16 +10,24 @@ function Home1() {
       <>
         <Head>
           <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
+            <title> Top Washing Machine Repair Services in Bangalore</title>
+            <title>Top Water purifier Services in Bangalore</title>
+            <title> Top Refrigerator Repair Services in Bangalore</title>
+            <title> Top AC Repair  and installation  Services in Bangalore</title>
+               <title>Top chimney Repair and installation services in Bangalore</title>
+          
           <meta name="description" content="Top microwave oven repair services in Bangalore and other locations like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, and more. Book online for easy scheduling and transparent pricing." />
           <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section */}
-          <div className="h-32 md:h-56 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
-            <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight">
+          <div className="h-32 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
+            <h1  className='text-white text-md text-center md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
+            <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight pt-12">
               Top Microwave Oven Repair Services In Bangalore
             </h1>
+            
             <h1 className="text-white text-xl text-center md:text-3xl lg:text-5xl font-bold md:mt-4 mt-2">
               <CustomTypeWriter />
             </h1>

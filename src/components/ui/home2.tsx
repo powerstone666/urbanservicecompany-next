@@ -21,7 +21,8 @@ function Home2({name}:Home2Props) {
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section */}
-          <div className="h-32 md:h-56 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
+          <div className="h-32 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
+          <h1  className='text-white text-md text-center md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
             <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight">
               Top Microwave Oven Repair Services In 
             </h1>
@@ -32,7 +33,7 @@ function Home2({name}:Home2Props) {
   
           {/* Home Services Section */}
           <h1 className="text-gray-900 text-center mt-8 md:mt-12 text-xl font-bold md:text-2xl lg:text-4xl font-['Poppins'] animate-fade-in-down">
-            Home services at your doorstep in Bangalore and Nearby Areas
+            Home Appliances service at your doorstep in Bangalore 
           </h1>
           <div className="mt-6 md:mt-10 px-4">
             <div className="container mx-auto">

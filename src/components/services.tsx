@@ -43,9 +43,17 @@ export default function Services() {
                 </div>
                 <div className="p-6 bg-white">
                   <h2 className="font-poppins font-semibold text-xl text-[#111827]">
-                    {service.title}
+                    {service.title}     
                     <span className="block text-sm font-normal mt-2 text-gray-600">
-                      in Bangalore
+                      in Bangalore    <a href="tel:+919019349170" className="pt-4">
+                                        <span className="w-full px-8 py-3 text-lg font-roboto font-bold text-white rounded-full 
+                                          bg-gradient-to-r from-blue-600 to-purple-600
+                                          transition-all duration-300 
+                                          hover:from-blue-700 hover:to-purple-700 hover:shadow-[0_0_20px_rgba(147,51,234,0.5)] 
+                                          hover:scale-105 transform active:scale-95">
+                                          Call Us
+                                        </span>
+                                      </a>
                     </span>
                   </h2>
                 </div>
