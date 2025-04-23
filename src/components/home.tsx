@@ -1,3 +1,4 @@
+
 import Head from 'next/head';
 import CustomTypeWriter from "./typewriter";
 import { LuCalendarSearch } from "react-icons/lu";

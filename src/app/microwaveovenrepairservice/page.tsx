@@ -89,9 +89,8 @@ export default function Microwave() {
                         <div className="max-w-4xl">
                             <h2 className="text-3xl font-bold mb-6">About Our Microwave Oven Repair Service</h2>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                We are Bangalore's trusted microwave oven repair service provider with over 10 years of experience. Our team of certified technicians specializes in all types of microwave oven repairs and maintenance services.
+                                We are Bangalore trusted microwave oven repair service provider with over 10 years of experience. Our team of certified technicians specializes in all types of microwave oven repairs and maintenance services.
                             </p>
-                            
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                                 <div className="bg-gray-50 p-6 rounded-lg">
                                     <h3 className="text-xl font-semibold mb-3">Our Services</h3>
