@@ -15,7 +15,7 @@ const slugs = [
   'Whitefield', 'Yelahanka', 'Yelahanka new town', 'Yeshwanthpur'
 ];
 
-const baseUrl = 'https://urbanservicecompany.me';
+const baseUrl = 'https://urbanservicecompany.live';
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const allowedRoutes = slugs.map(slug => `/${slug}`);

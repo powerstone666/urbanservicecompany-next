@@ -107,8 +107,8 @@ const Footer = () => {
                 </p>
                 <p className='flex items-center justify-center md:justify-start hover:translate-x-2 transition-transform duration-300 cursor-pointer'>
                   <FaEnvelope size={18} className='mr-2 text-blue-400 min-w-[20px]' />
-                  <a href="mailto:info@urbanservicecompany.me" className='hover:text-blue-400 transition-colors duration-300'>
-                    info@urbanservicecompany.me
+                  <a href="mailto:info@urbanservicecompany.live" className='hover:text-blue-400 transition-colors duration-300'>
+                    info@urbanservicecompany.live
                   </a>
                 </p>
               </div>
@@ -132,7 +132,7 @@ const Footer = () => {
               <p className='text-sm md:text-base font-poppins'>Call Now</p>
             </div>
           </a>
-          <a href="mailto:info@urbanservicecompany.me" className='group transition-all duration-300 hover:scale-105 cursor-pointer'>
+          <a href="mailto:info@urbanservicecompany.live" className='group transition-all duration-300 hover:scale-105 cursor-pointer'>
             <div className='flex items-center gap-2 border-x border-white/20 px-4 md:px-5 hover:text-blue-400'>
               <FaEnvelope className='group-hover:animate-bounce' />
               <p className='text-sm md:text-base font-poppins flex items-center gap-1'>

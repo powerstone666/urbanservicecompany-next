@@ -179,8 +179,8 @@ export default function Microwave() {
                                         </svg>
                                     </div>
                                     <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-                                    <a href="mailto:info@urbanservicecompany.me" className="text-lg hover:text-gray-200 break-all transition-colors">
-                                        info@urbanservicecompany.me
+                                    <a href="mailto:info@urbanservicecompany.live" className="text-lg hover:text-gray-200 break-all transition-colors">
+                                        info@urbanservicecompany.live
                                     </a>
                                 </div>
                                 

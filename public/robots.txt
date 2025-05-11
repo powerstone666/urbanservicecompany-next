@@ -82,4 +82,8 @@ Allow: /Whitefield
 Allow: /Yelahanka
 Allow: /Yelahanka new town
 Allow: /Yeshwanthpur
-Sitemap: https://urbanservicecompany.me/sitemap.xml
+Allow: /washing machine
+Allow: /microwav eoven
+Allow: /near me
+Allow: /AC
+Sitemap: https://urbanservicecompany.live/sitemap.xml

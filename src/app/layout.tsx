@@ -47,7 +47,7 @@ export default function RootLayout({
           content="Top Microwave Repair Services in Bangalore, Same Day Service in Bangalore"
         />
         <meta name="og:type" content="company" />
-        <meta name="og:url" content="https://www.urbanservicecompany.me" />
+        <meta name="og:url" content="https://www.urbanservicecompany.live" />
         <meta name="og:site_name" content="Urban Service Company" />
         <meta
           name="og:description"

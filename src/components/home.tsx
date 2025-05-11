@@ -23,9 +23,9 @@ function Home1() {
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section */}
-          <div className="h-32 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
+          <div className="h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
             <h1  className='text-white text-md text-center md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
-            <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight pt-12">
+            <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight pt-8 md:pt-12">
               Top Microwave Oven Repair Services In Bangalore
             </h1>
             

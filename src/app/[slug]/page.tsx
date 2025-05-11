@@ -133,11 +133,11 @@ export async function generateMetadata({ params }: { params: tParams }): Promise
   openGraph: {
         title: `Top Microwave Repair Services in ${formattedSlug}, Bangalore | Urban Service Company`,
         description: `Find expert microwave repair services in ${formattedSlug}, Bangalore. Affordable and quick solutions for all your appliance needs.`,
-        url: `https://www.urbanservicecompany.me/${formattedSlug}`,
+        url: `https://www.urbanservicecompany.live/${formattedSlug}`,
     siteName: "Urban Service Company",
     images: [
       {
-        url: "https://www.urbanservicecompany.me/images/og-image.jpg",
+        url: "https://www.urbanservicecompany.live/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Urban Service Company Logo",
@@ -149,7 +149,7 @@ export async function generateMetadata({ params }: { params: tParams }): Promise
     card: "summary_large_image",
         title: `Top Microwave Repair Services in ${formattedSlug}, Bangalore | Urban Service Company`,
         description: `Find expert microwave repair services in ${formattedSlug}, Bangalore. Affordable and quick solutions for all your appliance needs.`,
-    images: ["https://www.urbanservicecompany.me/images/twitter-image.jpg"],
+    images: ["https://www.urbanservicecompany.live/images/twitter-image.jpg"],
   },
 };
 }
