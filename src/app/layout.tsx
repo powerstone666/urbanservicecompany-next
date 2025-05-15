@@ -14,9 +14,12 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Top microwave oven repair service in Bangalore | Urban Service Company",
-  description: "Urban Service Company, Microwave oven repair and servicing, Expert microwave repair technician near me, Affordable microwave repair services near me, Microwave repair with warranty, Home microwave oven repair service, Quick microwave repair services near me, 24/7 microwave repair service, Microwave appliance repair near me, Emergency microwave repair services, Trusted microwave repair services near me, Best microwave repair company near me, Local microwave repair experts, Certified microwave repair technicians, Microwave repair in Bangalore, Bangalore microwave repair service near me, Best microwave repair in Bangalore, Affordable microwave repair in Bangalore, Microwave servicing at home in Bangalore, Fast microwave repair in Bangalore, Top-rated microwave oven repair Bangalore, Same day microwave repair in Bangalore, Microwave service and repair in Bangalore, Home visitService Locations, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur",
-  keywords: "urban service, home services, cleaning, plumbing, electrical, handyman, maintenance, repair, installation, local services, professional services, Microwave oven repair and servicing, Expert microwave repair technician near me, Affordable microwave repair services near me, Microwave repair with warranty, Home microwave oven repair service, Quick microwave repair services near me, 24/7 microwave repair service, Microwave appliance repair near me, Emergency microwave repair services, Trusted microwave repair services near me, Best microwave repair company near me, Local microwave repair experts, Certified microwave repair technicians, Microwave repair in Bangalore, Bangalore microwave repair service near me, Best microwave repair in Bangalore, Affordable microwave repair in Bangalore, Microwave servicing at home in Bangalore, Fast microwave repair in Bangalore, Top-rated microwave oven repair Bangalore, Same day microwave repair in Bangalore, Microwave service and repair in Bangalore, Home visitService Locations, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur",
+  title:
+    "Top microwave oven repair service in Bangalore | Urban Service Company",
+  description:
+    "Urban Service Company, Microwave oven repair and servicing, Expert microwave repair technician near me, Affordable microwave repair services near me, Microwave repair with warranty, Home microwave oven repair service, Quick microwave repair services near me, 24/7 microwave repair service, Microwave appliance repair near me, Emergency microwave repair services, Trusted microwave repair services near me, Best microwave repair company near me, Local microwave repair experts, Certified microwave repair technicians, Microwave repair in Bangalore, Bangalore microwave repair service near me, Best microwave repair in Bangalore, Affordable microwave repair in Bangalore, Microwave servicing at home in Bangalore, Fast microwave repair in Bangalore, Top-rated microwave oven repair Bangalore, Same day microwave repair in Bangalore, Microwave service and repair in Bangalore, Home visitService Locations, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur",
+  keywords:
+    "urban service, home services, cleaning, plumbing, electrical, handyman, maintenance, repair, installation, local services, professional services, Microwave oven repair and servicing, Expert microwave repair technician near me, Affordable microwave repair services near me, Microwave repair with warranty, Home microwave oven repair service, Quick microwave repair services near me, 24/7 microwave repair service, Microwave appliance repair near me, Emergency microwave repair services, Trusted microwave repair services near me, Best microwave repair company near me, Local microwave repair experts, Certified microwave repair technicians, Microwave repair in Bangalore, Bangalore microwave repair service near me, Best microwave repair in Bangalore, Affordable microwave repair in Bangalore, Microwave servicing at home in Bangalore, Fast microwave repair in Bangalore, Top-rated microwave oven repair Bangalore, Same day microwave repair in Bangalore, Microwave service and repair in Bangalore, Home visitService Locations, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur",
 };
 
 export default function RootLayout({
@@ -27,21 +30,36 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-adsense-account" content="ca-pub-2914201371636948"></meta>
-        {/* Google Tag Manager Script */}
+        {/* Google Analytics gtag.js */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-57VHG17K36"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-57VHG17K36');
+          `,
+          }}
+        />
+
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','G-57VHG17K36');
-            `,
+            })(window,document,'script','dataLayer','GTM-NS6GGT5C');
+          `,
           }}
         />
-        
-        {/* Meta Tags */}
+
+        {/* Meta tags */}
         <meta
           name="og:title"
           content="Top Microwave Repair Services in Bangalore, Same Day Service in Bangalore"
@@ -61,6 +79,8 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="icon2.png" />
+
+        {/* Google Fonts */}
         <style>
           {`
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -70,10 +90,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Google Tag Manager NoScript */}
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/gtag/js?id=G-57VHG17K36"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NS6GGT5C"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
