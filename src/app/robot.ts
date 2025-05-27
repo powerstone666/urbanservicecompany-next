@@ -1,5 +1,14 @@
 import { MetadataRoute } from "next";
 
+// Slugify: lowercased, hyphenated, no special chars (same as in sitemap.ts)
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\\s-]/g, '')     // Remove non-alphanumerics except spaces/hyphens
+    .replace(/\\s+/g, '-')             // Replace spaces with hyphens
+    .replace(/-+/g, '-');             // Remove multiple hyphens
+}
+
 const slugs = [
   'Adugodi', 'Amrutahalli', 'Anand rao circle', 'Ashok nagar', 'Avalahalli', 'BTM Layout', 
   'Banashankari', 'Banaswadi', 'Bannerghatta Road', 'Basaveshwaranagar', 'Basvanagudi', 'Begur', 
@@ -54,15 +63,13 @@ const slugs = [
 const baseUrl = 'https://urbanservicecompany.live';
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
-  const allowedRoutes = slugs.map(slug =>
-    `/${slug.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '')}`
-  );
+  const allowedRoutes = slugs.map(slug => `/${slugify(slug)}/`); // Use slugify and add trailing slash
 
   return {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', ...allowedRoutes],
+        allow: ['/', ...allowedRoutes], // Ensure homepage is allowed with a trailing slash if that's your canonical
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
