@@ -2,6 +2,7 @@ import logo from '../newlogo2.jpeg';
 import Image from 'next/image';
 import Slider from "@/components/slider";  // Add this import
 import type { Metadata } from "next";
+import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Microwave Oven Repair Service in Bangalore | Urban Service Company",
@@ -24,8 +25,13 @@ export const metadata: Metadata = {
 };
 
 export default function Microwave() {
+    const pathname = usePathname();
+    const canonicalUrl = `https://urbanservicecompany.live${pathname ? (pathname.endsWith('/') ? pathname : pathname + '/') : '/microwaveovenrepairservice/'}`;
     return (
         <>
+            <head>
+                <link rel="canonical" href={canonicalUrl} />
+            </head>
             {/* Fixed header section - changed from blue-600 to gray-900 */}
             <div className="fixed top-0 left-0 right-0 z-50 bg-gray-900 shadow-md">
                 <div className="container mx-auto px-4">

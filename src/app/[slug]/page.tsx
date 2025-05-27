@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Home2 from "@/components/ui/home2";
 import { Metadata } from "next";
+import { usePathname } from "next/navigation";
 type tParams = Promise<{ slug: string }>;
 
 export async function generateMetadata({ params }: { params: tParams }): Promise<Metadata> {
@@ -155,6 +156,8 @@ export default async function Home({ params }: { params: tParams }) {
 
   // Using the formatted slug as 'place'
   const place = formattedSlug;
+  const pathname = usePathname();
+  const canonicalUrl = `https://urbanservicecompany.live${pathname ? (pathname.endsWith('/') ? pathname : pathname + '/') : '/'}`;
 
   return (
     <main>
@@ -167,6 +170,9 @@ export default async function Home({ params }: { params: tParams }) {
       <Faq/>
       <Footer/>
     </div>
+    <head>
+        <link rel="canonical" href={canonicalUrl} />
+      </head>
   </main>
   );
 }
