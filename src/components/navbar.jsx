@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 // Update the logo import to use the correct path
-import logo from '../../public/newlogo2.jpeg';
+import logo from '../../public/ub.jpeg';
 import { Link as ScrollLink } from 'react-scroll';
 
 function Navbar() {

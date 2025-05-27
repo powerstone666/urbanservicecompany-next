@@ -1,4 +1,3 @@
-
 import Head from 'next/head';
 import CustomTypeWriter from "./typewriter";
 import { LuCalendarSearch } from "react-icons/lu";
@@ -10,80 +9,86 @@ function Home1() {
     return (
       <>
         <Head>
-          <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
-            <title> Top Washing Machine Repair Services in Bangalore</title>
-            <title>Top Water purifier Services in Bangalore</title>
-            <title> Top Refrigerator Repair Services in Bangalore</title>
-            <title> Top AC Repair  and installation  Services in Bangalore</title>
-               <title>Top chimney Repair and installation services in Bangalore</title>
-          
-          <meta name="description" content="Top microwave oven repair services in Bangalore and other locations like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, and more. Book online for easy scheduling and transparent pricing." />
-          <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
+          {/* Consolidated title. Choose the most representative one for this page. */}
+          <title>Top Home Appliance Repair Services in Bangalore | Urban Service Company</title>
+          {/* 
+            The other titles like "Top Washing Machine Repair..." could be titles for specific pages/sections 
+            or integrated into keywords/description if this is a general landing page for all services.
+            For this component, we'll use a more encompassing title.
+            If this page IS specifically for Microwave Oven Repair, then that title would be best:
+            <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
+          */}
+          <meta name="description" content="Urban Service Company offers top-rated repair services for microwaves, washing machines, ACs, refrigerators, and more in Bangalore, including Marathahalli, Whitefield, HSR Layout. Book online!" />
+          <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, refrigerator repair, water purifier service, chimney repair, appliance repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar" />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
-          {/* Header Section */}
-          <div className="h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
-            <h1  className='text-white text-md text-center md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
-            <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight pt-8 md:pt-12">
-              Top Microwave Oven Repair Services In Bangalore
+          {/* Header Section - Adjusted height for mobile */}
+          <div className="h-56 sm:h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl px-4">
+            <h1  className='text-white text-sm text-center sm:text-base md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
+            <h1 className="text-white text-lg text-center sm:text-xl md:text-3xl lg:text-5xl font-bold tracking-tight pt-6 sm:pt-8 md:pt-12">
+              {/* Main heading can be more general or specific based on page focus */}
+              Expert Home Appliance Repair
             </h1>
+            <h2 className="text-white text-center text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">In Bangalore</h2>
             
-            <h1 className="text-white text-xl text-center md:text-3xl lg:text-5xl font-bold md:mt-4 mt-2">
+            <h3 className="text-white text-lg text-center sm:text-xl md:text-3xl lg:text-4xl font-bold md:mt-3 mt-2">
               <CustomTypeWriter />
-            </h1>
+            </h3>
           </div>
   
           {/* Home Services Section */}
-          <h1 className="text-gray-900 text-center mt-8 md:mt-12 text-xl font-bold md:text-2xl lg:text-4xl font-['Poppins'] animate-fade-in-down">
+          <h1 className="text-gray-900 text-center mt-8 md:mt-12 text-xl px-2 sm:text-2xl lg:text-4xl font-['Poppins'] animate-fade-in-down">
             Home services at your doorstep in Bangalore and Nearby Areas
           </h1>
-          <div className="mt-6 md:mt-10 px-4">
+          <div className="mt-6 md:mt-10 px-2 sm:px-4"> {/* Adjusted horizontal padding */}
             <div className="container mx-auto">
-              <div className="flex overflow-x-auto space-x-6 pb-8 md:justify-center md:items-center scrollbar-hide">
-                <div className="flex flex-nowrap space-x-4">
-                  <div className="w-72 md:w-80 h-[380px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center pt-6 hover:bg-gray-50 cursor-pointer">
+              {/* Outer div for scrolling and padding */}
+              <div className="flex overflow-x-auto space-x-4 sm:space-x-6 pb-8 md:justify-center scrollbar-hide">
+                  {/* Card 1: Easy Scheduling */}
+                  <div className="flex-shrink-0 w-[80vw] max-w-[280px] sm:w-64 md:w-80 h-auto min-h-[340px] sm:min-h-[360px] md:min-h-[380px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center p-4 pt-5 sm:pt-6 hover:bg-gray-50 cursor-pointer">
                     <div className="text-gray-900 transition-all duration-300 transform hover:rotate-12 cursor-pointer">
-                      <LuCalendarSearch size={70} />
+                      <LuCalendarSearch size={56} className="sm:w-[64px] sm:h-[64px] md:w-[70px] md:h-[70px]" />
                     </div>
-                    <h1 className="pt-4 text-xl font-bold text-gray-900">Easy Scheduling</h1>
-                    <p className="p-2">
+                    <h2 className="pt-3 sm:pt-4 text-lg sm:text-xl font-bold text-gray-900">Easy Scheduling</h2>
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Book Anytime, Anywhere:</span> Schedule your service online in less than a minute using our user-friendly platform.
                     </p>
-                    <p className="p-2">
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Convenient for Busy Lifestyles:</span> No need to wait for office hours; book appointments at your preferred time.
                     </p>
                   </div>
-                  <div className="w-72 md:w-80 h-[400px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center pt-6 hover:bg-gray-50 -mt-4 cursor-pointer">
+                  {/* Card 2: Service Fee */}
+                  <div className="flex-shrink-0 w-[80vw] max-w-[280px] sm:w-64 md:w-80 h-auto min-h-[360px] sm:min-h-[380px] md:min-h-[400px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center p-4 pt-5 sm:pt-6 hover:bg-gray-50 sm:mt-0 md:-mt-4 cursor-pointer">
                     <div className="text-gray-900 transition-all duration-300 transform hover:rotate-12 cursor-pointer">
-                      <MdOutlineHomeRepairService size={70} />
+                      <MdOutlineHomeRepairService size={56} className="sm:w-[64px] sm:h-[64px] md:w-[70px] md:h-[70px]" />
                     </div>
-                    <h1 className="pt-4 text-xl font-bold text-gray-900">Service Fee</h1>
-                    <p className="p-2">
+                    <h2 className="pt-3 sm:pt-4 text-lg sm:text-xl font-bold text-gray-900">Service Fee</h2>
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Transparent Pricing:</span> Service fees are applied toward your total repair cost, making services more affordable.
                     </p>
-                    <p className="p-2">
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Clear Estimates:</span> Receive an upfront breakdown of repair costs before proceeding.
                     </p>
                   </div>
-                  <div className="w-72 md:w-80 h-[380px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center pt-6 hover:bg-gray-50 cursor-pointer">
+                  {/* Card 3: Extended Warranty */}
+                  <div className="flex-shrink-0 w-[80vw] max-w-[280px] sm:w-64 md:w-80 h-auto min-h-[340px] sm:min-h-[360px] md:min-h-[380px] bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col text-center items-center p-4 pt-5 sm:pt-6 hover:bg-gray-50 cursor-pointer">
                     <div className="text-gray-900 transition-all duration-300 transform hover:rotate-12 cursor-pointer">
-                      <TbHealthRecognition size={70} />
+                      <TbHealthRecognition size={56} className="sm:w-[64px] sm:h-[64px] md:w-[70px] md:h-[70px]" />
                     </div>
-                    <h1 className="pt-4 text-xl font-bold text-gray-900">Extended Warranty</h1>
-                    <p className="p-2">
+                    <h2 className="pt-3 sm:pt-4 text-lg sm:text-xl font-bold text-gray-900">Extended Warranty</h2>
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Comprehensive Coverage:</span> Covers unexpected breakdowns and ensures hassle-free repairs.
                     </p>
-                    <p className="p-2">
+                    <p className="p-1 sm:p-2 text-sm sm:text-base">
                       <span className="font-bold">Priority Service:</span> Designed to reduce repair stress for working professionals and households.
                     </p>
                   </div>
-                </div>
               </div>
             </div>
           </div>
   
-          {/* Slider Section */}
+          {/* Slider Section - Made height responsive */}
           <div className="w-full bg-gradient-to-r from-black to-gray-900 py-8">
             <div className="w-full max-w-screen-xl mx-auto px-4">
               <h1 className="text-white text-2xl md:text-4xl mb-6 font-['Poppins'] relative">
@@ -92,7 +97,8 @@ function Home1() {
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></span>
                 </span>
               </h1>
-              <div className="w-full h-[400px] rounded-xl overflow-hidden">
+              {/* Adjusted height for slider on mobile */}
+              <div className="w-full h-[280px] sm:h-[320px] md:h-[400px] rounded-xl overflow-hidden">
                 <Slider />
               </div>
             </div>
