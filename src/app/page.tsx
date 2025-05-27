@@ -8,31 +8,28 @@ import Services from "@/components/services";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Top Microwave Oven Repair Services in Bangalore',
-  description: 'Urban Service Company offers top microwave repair services in Bangalore and other appliances...',
-  keywords: 'microwave repair, AC repair, washing machine repair, refrigerator repair, Bangalore',
+  title: "Top Home Appliance Repair Services in Bangalore | Urban Service Company",
+  description: "Urban Service Company offers top-rated repair services for microwaves, washing machines, ACs, refrigerators, and more in Bangalore. Book online for fast, reliable service!",
+  keywords: [
+    "home appliance repair",
+    "bangalore",
+    "urban service company",
+    "microwave repair",
+    "washing machine repair",
+    "ac repair",
+    "refrigerator repair"
+  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: 'Urban Service Company - Professional Services for Your City',
-    description: 'Offering top-notch urban services to meet all your city needs.',
-    url: 'https://www.urbanservicecompany.com',
-    siteName: 'Urban Service Company',
-    images: [{
-      url: 'https://www.urbanservicecompany.com/images/og-image.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'Urban Service Company Logo',
-    }],
-    type: 'website',
+    title: "Top Home Appliance Repair Services in Bangalore | Urban Service Company",
+    description: "Fast, reliable home appliance repair in Bangalore. We service all major brands.",
+    url: "/",
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Urban Service Company - Professional Services for Your City',
-    description: 'Offering top-notch urban services to meet all your city needs.',
-    images: ['https://www.urbanservicecompany.com/images/twitter-image.jpg'],
-  },
-}
+};
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
       <Navbar/>

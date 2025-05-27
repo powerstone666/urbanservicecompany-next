@@ -1,6 +1,28 @@
 import logo from '../newlogo2.jpeg';
 import Image from 'next/image';
 import Slider from "@/components/slider";  // Add this import
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Microwave Oven Repair Service in Bangalore | Urban Service Company",
+  description: "Professional & Reliable Microwave Oven Repair at Your Doorstep in Bangalore. Certified technicians, fast service, and genuine parts.",
+  keywords: [
+    "microwave repair bangalore",
+    "microwave oven service",
+    "microwave repair",
+    "appliance repair bangalore",
+    "urban service company"
+  ],
+  alternates: {
+    canonical: "/microwaveovenrepairservice/",
+  },
+  openGraph: {
+    title: "Microwave Oven Repair Service in Bangalore | Urban Service Company",
+    description: "Professional & Reliable Microwave Oven Repair at Your Doorstep in Bangalore. Certified technicians, fast service, and genuine parts.",
+    url: "/microwaveovenrepairservice/",
+  },
+};
+
 export default function Microwave() {
     return (
         <>

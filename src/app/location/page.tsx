@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import { Poppins, Roboto } from 'next/font/google';
+import type { Metadata } from "next";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -13,6 +14,25 @@ const roboto = Roboto({
   weight: ['400', '500'],
   variable: '--font-roboto',
 });
+
+export const metadata: Metadata = {
+  title: "Service Locations in Bangalore | Urban Service Company",
+  description: "Find Urban Service Company in your neighborhood. We&apos;re expanding our reach to serve you better across Bangalore.",
+  keywords: [
+    "service locations bangalore",
+    "urban service company locations",
+    "appliance repair locations",
+    "bangalore service areas"
+  ],
+  alternates: {
+    canonical: "/location/",
+  },
+  openGraph: {
+    title: "Service Locations in Bangalore | Urban Service Company",
+    description: "Find Urban Service Company in your neighborhood. We&apos;re expanding our reach to serve you better across Bangalore.",
+    url: "/location/",
+  },
+};
 
 const locations: string[] = [
   'Adugodi', 'Amrutahalli', 'Anand rao circle', 'Ashok nagar', 'Avalahalli', 'BTM Layout',

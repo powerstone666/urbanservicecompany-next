@@ -130,20 +130,13 @@ export async function generateMetadata({ params }: { params: tParams }): Promise
       "Top Onida Hob Repair Services in Bangalore",
       
   ],
+  alternates: {
+    canonical: `/` + encodeURIComponent(slug).replace(/%20/g, '-') + '/',
+  },
   openGraph: {
         title: `Top Microwave Repair Services in ${formattedSlug}, Bangalore | Urban Service Company`,
-        description: `Find expert microwave repair services in ${formattedSlug}, Bangalore. Affordable and quick solutions for all your appliance needs.`,
-        url: `https://www.urbanservicecompany.live/${formattedSlug}`,
-    siteName: "Urban Service Company",
-    images: [
-      {
-        url: "https://www.urbanservicecompany.live/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Urban Service Company Logo",
-      },
-    ],
-    type: "website",
+        description: `Urban Service Company, Microwave oven repair and servicing, Expert microwave repair technician near me, Affordable microwave repair services near me, Microwave repair with warranty, Home microwave oven repair service, Quick microwave repair services near me, 24/7 microwave repair service, Microwave appliance repair near me, Emergency microwave repair services, Trusted microwave repair services near me, Best microwave repair company near me, Local microwave repair experts, Certified microwave repair technicians, Microwave repair in Bangalore, Bangalore microwave repair service near me, Best microwave repair in Bangalore, Affordable microwave repair in Bangalore, Microwave servicing at home in Bangalore, Fast microwave repair in Bangalore, Top-rated microwave oven repair Bangalore, Same day microwave repair in Bangalore, Microwave service and repair in Bangalore, Home visitService Locations, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur`,
+    url: `/` + encodeURIComponent(slug).replace(/%20/g, '-') + '/',
   },
   twitter: {
     card: "summary_large_image",

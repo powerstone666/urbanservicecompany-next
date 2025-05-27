@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import CustomTypeWriter from "./typewriter";
 import { LuCalendarSearch } from "react-icons/lu";
 import { MdOutlineHomeRepairService } from "react-icons/md";
@@ -8,20 +7,6 @@ import Slider from "./slider";
 function Home1() {
     return (
       <>
-        <Head>
-          {/* Consolidated title. Choose the most representative one for this page. */}
-          <title>Top Home Appliance Repair Services in Bangalore | Urban Service Company</title>
-          {/* 
-            The other titles like "Top Washing Machine Repair..." could be titles for specific pages/sections 
-            or integrated into keywords/description if this is a general landing page for all services.
-            For this component, we'll use a more encompassing title.
-            If this page IS specifically for Microwave Oven Repair, then that title would be best:
-            <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
-          */}
-          <meta name="description" content="Urban Service Company offers top-rated repair services for microwaves, washing machines, ACs, refrigerators, and more in Bangalore, including Marathahalli, Whitefield, HSR Layout. Book online!" />
-          <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, refrigerator repair, water purifier service, chimney repair, appliance repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar" />
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-        </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section - Adjusted height for mobile */}
           <div className="h-56 sm:h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl px-4">
