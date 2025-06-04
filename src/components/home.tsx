@@ -1,3 +1,4 @@
+'use client';
 import CustomTypeWriter from "./typewriter";
 import { LuCalendarSearch } from "react-icons/lu";
 import { MdOutlineHomeRepairService } from "react-icons/md";
