@@ -62,14 +62,12 @@ const slugs = [
 
 const baseUrl = 'https://urbanservicecompany.live';
 
-export default async function robots(): Promise<MetadataRoute.Robots> {
-  const allowedRoutes = slugs.map(slug => `/${slugify(slug)}/`); // Use slugify and add trailing slash
-
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', ...allowedRoutes], // Ensure homepage is allowed with a trailing slash if that's your canonical
+        allow: ['/', ...slugs.map(slug => `/${slugify(slug)}/`)], // Ensure homepage is allowed with a trailing slash if that's your canonical
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

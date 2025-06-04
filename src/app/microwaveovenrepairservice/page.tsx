@@ -4,15 +4,15 @@
 import logo from '../newlogo2.jpeg';
 import Image from 'next/image';
 import Slider from "@/components/slider";  // Add this import
-import { usePathname } from "next/navigation";
 
 export default function Microwave() {
-    const pathname = usePathname();
-    const canonicalUrl = `https://urbanservicecompany.live${pathname ? (pathname.endsWith('/') ? pathname : pathname + '/') : '/microwaveovenrepairservice/'}`;
+    const canonicalUrl = `https://urbanservicecompany.live/microwaveovenrepairservice`;
+
     return (
         <>
             <head>
                 <link rel="canonical" href={canonicalUrl} />
+                <meta name="robots" content="index, follow" />
             </head>
             {/* Fixed header section - changed from blue-600 to gray-900 */}
             <div className="fixed top-0 left-0 right-0 z-50 bg-gray-900 shadow-md">
@@ -206,8 +206,8 @@ export default function Microwave() {
                                             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
-                                    <p className="text-lg">Bangalore,<br/>Karnataka, India</p>
+                                    <h3 className="text-lg font-semibold mb-2">Location</h3>
+                                    <p className="text-lg">Bangalore, India</p>
                                 </div>
                             </div>
                         </div>

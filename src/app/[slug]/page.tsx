@@ -9,7 +9,6 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Home2 from "@/components/ui/home2";
-import { usePathname } from "next/navigation";
 import Head from "next/head";
 import React from "react";
 
@@ -22,10 +21,7 @@ export default function Home({ params }: { params: Promise<{ slug: string }> }) 
     });
   }, [params]);
 
-  const pathname = usePathname();
-  const canonicalUrl = `https://urbanservicecompany.live${
-    pathname ? (pathname.endsWith("/") ? pathname : pathname + "/") : "/"
-  }`;
+  const canonicalUrl = `https://urbanservicecompany.live/${formattedSlug}`;
 
   return (
     <main>
@@ -40,6 +36,7 @@ export default function Home({ params }: { params: Promise<{ slug: string }> }) 
       </div>
       <Head>
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
       </Head>
     </main>
   );

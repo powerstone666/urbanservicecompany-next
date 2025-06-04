@@ -44,6 +44,7 @@ const Location = () => {
     <>
       <head>
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
       </head>
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
         {/* Hero Section */}
