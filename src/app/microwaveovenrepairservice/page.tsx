@@ -45,9 +45,11 @@ export default function Microwave() {
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                                <img 
+                                <Image 
                                     src="/images/microwave-repair-1.jpg" 
                                     alt="Microwave Repair Service"
+                                    width={500}
+                                    height={300}
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
@@ -55,9 +57,11 @@ export default function Microwave() {
                                 </div>
                             </div>
                             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                                <img 
+                                <Image 
                                     src="/images/microwave-repair-2.jpg" 
                                     alt="Expert Technicians"
+                                    width={500}
+                                    height={300}
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
@@ -65,9 +69,11 @@ export default function Microwave() {
                                 </div>
                             </div>
                             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                                <img 
+                                <Image 
                                     src="/images/microwave-repair-3.jpg" 
                                     alt="Quick Service"
+                                    width={500}
+                                    height={300}
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">

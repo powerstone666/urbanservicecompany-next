@@ -5,6 +5,7 @@ import { MdOutlineHomeRepairService } from "react-icons/md";
 import { TbHealthRecognition } from "react-icons/tb";
 import Slider from "./slider";
 import { usePathname } from "next/navigation";
+import Head from "next/head";
 
 function Home1() {
     const pathname = usePathname();
@@ -12,9 +13,9 @@ function Home1() {
     return (
       <>
         {/* Dynamic canonical tag for all slugs/pages using this component */}
-        <head>
+        <Head>
           <link rel="canonical" href={canonicalUrl} />
-        </head>
+        </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section - Adjusted height for mobile */}
           <div className="h-56 sm:h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl px-4">

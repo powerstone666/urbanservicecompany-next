@@ -13,10 +13,6 @@ function About() {
           name="keywords"
           content="microwave repair Bangalore, AC repair Bangalore, washing machine repair Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className="w-full py-16 md:py-24 bg-gradient-to-b from-black via-gray-900 to-black text-center relative overflow-hidden" id="about">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(50,50,50,0.2),rgba(0,0,0,0.5))] pointer-events-none"></div>

@@ -1,4 +1,4 @@
-// Removed "generateMetadata" function and imported it from "metadata.ts"
+// Updated the type of `params` to match the expected type
 "use client";
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
@@ -10,32 +10,37 @@ import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Home2 from "@/components/ui/home2";
 import { usePathname } from "next/navigation";
-import { generateMetadata } from "./metadata";
+import Head from "next/head";
+import React from "react";
 
-type tParams = Promise<{ slug: string }>;
+export default function Home({ params }: { params: Promise<{ slug: string }> }) {
+  const [formattedSlug, setFormattedSlug] = React.useState<string>("");
 
-export default async function Home({ params }: { params: tParams }) {
-  const { slug } = await params;
-  const formattedSlug = decodeURIComponent(slug.replace(/%20/g, " "));
+  React.useEffect(() => {
+    params.then(({ slug }) => {
+      setFormattedSlug(decodeURIComponent(slug.replace(/%20/g, " ")));
+    });
+  }, [params]);
 
-  const place = formattedSlug;
   const pathname = usePathname();
-  const canonicalUrl = `https://urbanservicecompany.live${pathname ? (pathname.endsWith('/') ? pathname : pathname + '/') : '/'}`;
+  const canonicalUrl = `https://urbanservicecompany.live${
+    pathname ? (pathname.endsWith("/") ? pathname : pathname + "/") : "/"
+  }`;
 
   return (
     <main>
       <Navbar />
       <div className="pt-14 md:pt-14">
-        <Home2 name={place} />
+        <Home2 name={formattedSlug} />
         <Services />
         <About />
         <Choose />
         <Faq />
         <Footer />
       </div>
-      <head>
+      <Head>
         <link rel="canonical" href={canonicalUrl} />
-      </head>
+      </Head>
     </main>
   );
 }

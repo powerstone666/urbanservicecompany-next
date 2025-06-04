@@ -17,7 +17,6 @@ function Home2({name}:Home2Props) {
           <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
           <meta name="description" content="Top microwave oven repair services in Bangalore and other locations like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, and more. Book online for easy scheduling and transparent pricing." />
           <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section */}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -104,6 +105,12 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
+        {/* Used next/script for Google Analytics */}
+        <Script
+          src="https://www.google-analytics.com/analytics.js"
+          strategy="afterInteractive"
+        />
 
         {children}
       </body>

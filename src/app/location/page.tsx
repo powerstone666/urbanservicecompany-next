@@ -1,6 +1,5 @@
 "use client";
 
-import { metadata } from "./metadata";
 import React, { useState } from "react";
 import { Poppins, Roboto } from 'next/font/google';
 import { usePathname } from "next/navigation";

@@ -11,7 +11,6 @@ function Choose() {
                 <title>Top Microwave Repair Services in Bangalore | Urban Service Company</title>
                 <meta name="description" content="Best microwave, AC, washing machine repair services in Bangalore and surrounding areas like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, and more." />
                 <meta name="keywords" content="microwave repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City" />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
             </Head>
             <div className="w-full min-h-screen bg-gradient-to-b from-white to-gray-100 py-12 font-roboto" id="whyus">
                 <div className="text-center mb-16">
