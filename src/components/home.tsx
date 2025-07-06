@@ -19,12 +19,12 @@ function Home1() {
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
           {/* Header Section - Adjusted height for mobile */}
           <div className="h-56 sm:h-64 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl px-4">
-            <h1  className='text-white text-sm text-center sm:text-base md:text-xl lg:text-2xl font-bold tracking-tight'>Toll Free Customer Service Number- <a href="tel:+919019349170" className='hover:text-purple-800'>+91 9019349170</a></h1>
+           
             <h1 className="text-white text-lg text-center sm:text-xl md:text-3xl lg:text-5xl font-bold tracking-tight pt-6 sm:pt-8 md:pt-12">
               {/* Main heading can be more general or specific based on page focus */}
               Expert Home Appliance Repair
             </h1>
-            <h2 className="text-white text-center text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">In Bangalore</h2>
+            <h2 className="text-white text-center text-base sm:text-lg md:text-xl lg:text-5xl p-4 font-semibold">In Bangalore</h2>
             
             <h3 className="text-white text-lg text-center sm:text-xl md:text-3xl lg:text-4xl font-bold md:mt-3 mt-2">
               <CustomTypeWriter />

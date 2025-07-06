@@ -2,20 +2,21 @@ import Head from 'next/head';
 import { LuCalendarSearch } from "react-icons/lu";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { TbHealthRecognition } from "react-icons/tb";
-import CustomTypeWriter from '../typewriter';
-import Slider from '../slider';
+
+import Slider from './slider';
+import CustomTypeWriter from './typewriter';
 
 
 interface Home2Props {
   name: string | string[] | undefined; 
 }
 
-function Home2({name}:Home2Props) {
+function Washing({name}:Home2Props) {
     return (
       <>
         <Head>
-          <title>Top Microwave Oven Repair Services in Bangalore | Urban Service Company</title>
-          <meta name="description" content="Top microwave oven repair services in Bangalore and other locations like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, and more. Book online for easy scheduling and transparent pricing." />
+          <title>Top Washing Machine Repair Services in Bangalore | Urban Service Company</title>
+          <meta name="description" content="Top washing machine repair services in Bangalore and other locations like Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, and more. Book online for easy scheduling and transparent pricing." />
           <meta name="keywords" content="microwave repair, oven repair, AC repair, washing machine repair, Bangalore, Marathahalli, Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, JP Nagar, BTM Layout, Banashankari, Hebbal, Yelahanka, Jayanagar, Malleshwaram, Rajajinagar, RT Nagar, Vijayanagar, Bannerghatta Road, KR Puram, CV Raman Nagar, Majestic, Peenya, Jalahalli, Yeshwanthpur, Basaveshwaranagar, Vidyaranyapura, Hesaraghatta, Nagarbhavi, Kengeri, Magadi Road, Rajarajeshwari Nagar, Kanakapura Road, Sarjapur Road, Kadugodi, Bommanahalli, Begur, Kudlu Gate, Hosur Road, Bellandur, Sarjapur" />
         </Head>
         <div className="min-h-screen bg-[#f8f9fa] font-['Poppins']" id="home">
@@ -23,10 +24,10 @@ function Home2({name}:Home2Props) {
           <div className="h-32 md:h-72 w-full bg-gradient-to-r from-gray-900 to-black flex flex-col justify-center items-center transform transition-all duration-500 hover:shadow-2xl">
         
             <h1 className="text-white text-lg text-center md:text-3xl lg:text-5xl font-bold tracking-tight">
-              Top Microwave Oven Repair Services In 
+              Top Washing Machine Repair Services In
             </h1>
             <h1 className="text-white text-xl text-center md:text-3xl lg:text-5xl font-bold md:mt-4 mt-2">
-              {name? name : "Bangalore"}  <span><CustomTypeWriter/></span>  
+              {name? name : "Bangalore"} <span><CustomTypeWriter/></span>
             </h1>
           </div>
   
@@ -98,4 +99,4 @@ function Home2({name}:Home2Props) {
     );
   }
   
-  export default Home2;
+  export default Washing;

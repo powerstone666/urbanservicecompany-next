@@ -67,7 +67,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', ...slugs.map(slug => `/${slugify(slug)}/`)], // Ensure homepage is allowed with a trailing slash if that's your canonical
+        allow: ['/', ...slugs.map(slug => `/${slugify(slug)}/`),
+                    ...slugs.map(slug => `/washingmachinerepairservice/${slugify(slug)}/`)
+        ], // Ensure homepage is allowed with a trailing slash if that's your canonical
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Poppins, Roboto } from 'next/font/google';
 import { usePathname } from "next/navigation";
-
+import Link from "next/link";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['600', '700'],
@@ -121,7 +121,7 @@ const Location = () => {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span className="text-gray-800">{location}</span>
+                <Link href={`/${location}`}><span className="text-gray-800">{location}</span></Link>
                 </div>
               </div>
             ))}

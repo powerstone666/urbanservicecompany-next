@@ -67,7 +67,7 @@ function Navbar() {
                       transition-all duration-300 
                       hover:from-blue-700 hover:to-purple-700 hover:shadow-[0_0_20px_rgba(147,51,234,0.5)] 
                       hover:scale-105 transform active:scale-95">
-                      Call Us
+                      Call Now
                     </Button>
                   </a>
                 </div>

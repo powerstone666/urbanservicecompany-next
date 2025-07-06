@@ -97,7 +97,13 @@ function slugify(text: string): string {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const postEntries = Array.from(new Set(rawSlugs.map(slugify))).map(slug => ({
-    url: `${baseUrl}/${slug}/`, // Include trailing slash to avoid redirects
+    url: `${baseUrl}/${slug}/`,
+     // Include trailing slash to avoid redirects
+    lastModified: new Date().toISOString(),
+  }));
+ const postEntries2 = Array.from(new Set(rawSlugs.map(slugify))).map(slug => ({
+    url: `${baseUrl}/washingmachinerepairservice/${slug}/`,
+     // Include trailing slash to avoid redirects
     lastModified: new Date().toISOString(),
   }));
 
@@ -107,5 +113,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
     },
     ...postEntries,
+    ...postEntries2
   ];
 }
