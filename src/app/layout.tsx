@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://urbanservicecompany.live"), // Added metadataBase
-  title: "Urban Service Company | Expert Home Appliance Repair in Bangalore", // Generalized title
+  title: "Urban Service Company |Top Washing Machine Repair Service in Bangalore", // Generalized title
   description:
     "Urban Service Company offers expert repair and servicing for all home appliances in Bangalore. Trusted technicians for washing machines, microwave ovens, ACs, refrigerators, and more. Contact us for reliable and quick service.", // Generalized description
   keywords: [ // Changed to an array for better structure
@@ -32,7 +32,9 @@ export const metadata: Metadata = {
     "appliance installation",
     "appliance servicing",
     "expert technicians",
-  ],
+    "top washing machine service near me ","top microwave service near me ","urban","service","near me","in bangalore","technician near me",
+  "microwave oven repair","door step repair service","same day service ","low cost service","washing machine repair service ","washing machine vibration issue fix",
+"best washing machine technician in bangalore","washing machine repair same day service",],
   openGraph: { // Added openGraph object
     title: "Urban Service Company | Expert Home Appliance Repair Bangalore",
     description: "Your one-stop destination for all home appliance repair needs in Bangalore. Expert technicians, genuine spare parts, and on-time service.",
@@ -119,3 +121,4 @@ export default function RootLayout({
     </html>
   );
 }
+

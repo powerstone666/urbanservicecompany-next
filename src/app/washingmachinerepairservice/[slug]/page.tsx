@@ -27,7 +27,7 @@ export default function Home({ params }: { params: Promise<{ slug: string }> }) 
     <main>
       <Navbar />
       <div className="pt-14 md:pt-14">
-        <Washing name={formattedSlug} />
+       {/* <Washing name={formattedSlug} /> */}
         <Services />
         <About />
         <Choose />
