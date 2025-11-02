@@ -8,7 +8,6 @@ import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
-import Washing from "@/components/washing";
 import Head from "next/head";
 import React from "react";
 
